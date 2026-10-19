@@ -1,0 +1,9 @@
+{
+  "name": "TruthAI Fake News Detector",
+  "short_name": "TruthAI",
+  "description": "AI-assisted news credibility checker",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f5fa",
+  "theme_color": "#102a43"
+}
