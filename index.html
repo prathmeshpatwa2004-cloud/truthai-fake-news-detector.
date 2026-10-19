@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TruthAI - Fake News Detector</title>
+
+  <meta name="theme-color" content="#102a43">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <header class="header">
+    <h1>📰 TruthAI</h1>
+    <p>AI-Powered Fake News Detection</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Check Your News</h2>
+
+      <p>
+        Paste a news headline or article below
+        to analyse its credibility.
+      </p>
+
+      <textarea
+        id="newsInput"
+        placeholder="Enter English or Marathi news here..."
+      ></textarea>
+
+      <button id="checkButton" onclick="checkNews()">
+        🤖 Analyse News
+      </button>
+
+      <div id="loading" hidden>
+        Analysing news, please wait...
+      </div>
+
+      <div id="result" aria-live="polite"></div>
+
+      <p class="note">
+        Note: AI predictions can be incorrect.
+        Always verify important claims using reliable sources.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 TruthAI | Fake News Detection Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
